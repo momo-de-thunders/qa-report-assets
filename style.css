@@ -37,6 +37,7 @@ nav{
   font-size:0.72rem;font-weight:600;color:var(--muted);
   letter-spacing:0.02em;
 }
+@media(max-width:768px){.nav-tag{display:none}}
 .btn{
   background:var(--blue);color:white;
   padding:8px 18px;border-radius:8px;
