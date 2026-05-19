@@ -278,6 +278,8 @@ function initHubSpotForm() {
       region: "eu1",
       target: "#hbspt-form-target",
       onFormSubmitted: function() {
+        const navCta = document.getElementById('nav-cta');
+        if (navCta) navCta.style.display = 'none';
         revealGatedContent();
       }
     });
