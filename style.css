@@ -102,7 +102,7 @@ h2{
   font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;
   letter-spacing:-0.035em;color:var(--navy);line-height:1.1;margin-bottom:12px;
 }
-.sec-sub{font-size:0.97rem;color:var(--muted);max-width:500px;line-height:1.7;margin-bottom:44px}
+.sec-sub{font-size:0.97rem;color:var(--muted);max-width:100%;line-height:1.7;margin-bottom:44px}
 
 /* FINDING CARDS */
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
