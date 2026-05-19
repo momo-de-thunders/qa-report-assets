@@ -259,6 +259,8 @@ function switchTab(name, btn) {
 
 // ── GATE (HubSpot) ──
 function revealGatedContent() {
+  const navCta = document.getElementById('nav-cta');
+  if (navCta) navCta.style.display = 'none';
   document.getElementById('hubspot-form-wrapper').style.display = 'none';
   document.getElementById('gok').style.display = 'block';
   setTimeout(() => {
