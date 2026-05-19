@@ -288,6 +288,15 @@ function initHubSpotForm() {
   }
 }
 
+// Fallback: HubSpot window message event (fires even when onFormSubmitted doesn't)
+window.addEventListener('message', function(event) {
+  if (event.data && event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmitted') {
+    const navCta = document.getElementById('nav-cta');
+    if (navCta) navCta.style.display = 'none';
+    revealGatedContent();
+  }
+});
+
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initHubSpotForm);
 } else {
